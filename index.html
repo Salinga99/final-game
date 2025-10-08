@@ -147,7 +147,7 @@
 </head>
 <body class="p-4">
     <div class="container">
-        <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 text-center text-red-400">SAFETY PUZZLE CHALLENGE 20205 </h1>
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 text-center text-red-400">SAFETY PUZZLE CHALLENGE 2025 </h1>
         <p class="text-gray-400 mb-6 text-center">ඔබට ලැබෙන උපරිම කාලය මිනිත්තු 5කි.</p>
 
         <div id="start-screen">
@@ -324,14 +324,14 @@
                 status = 'COMPLETED';
                 statusMessage = `<span class="text-2xl font-bold text-green-500">CONGRATULATIONS! You Won!</span><br>
                                  <span class="text-xl">Time Taken: ${formatTime(timeElapsed)}</span><br>
-                                 <span class="text-2xl font-bold text-yellow-400">YOUR SCORE: ${score} marks!</span>`;
+                                 
             } else {
                 score = 0;
                 messageClass = 'message message-fail';
                 status = (endReason === 'TIMEOUT') ? 'TIME OUT' : 'STOPPED';
                 statusMessage = `<span class="text-2xl font-bold">GAME ENDED (${status}).</span><br>
                                  <span class="text-xl">Time Elapsed: ${formatTime(timeElapsed)}</span><br>
-                                 <span class="text-2xl font-bold">YOUR SCORE: 0 marks.</span>`;
+                              
 
                 if (endReason === 'TIMEOUT') {
                     statusMessage = `<span class="text-2xl font-bold text-red-500">TIME'S UP! Try Again.</span><br>` + statusMessage;
@@ -650,6 +650,7 @@
     </script>
 </body>
 </html>
+
 
 
 
